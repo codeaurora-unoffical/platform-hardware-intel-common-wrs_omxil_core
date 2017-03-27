@@ -1779,7 +1779,7 @@ OMX_ERRORTYPE ComponentBase::SetWorkingRole(const OMX_STRING role)
     }
 
     LOGE("%s: cannot find %s role\n", GetName(), role);
-    return OMX_ErrorBadParameter;
+    return OMX_ErrorUnsupportedSetting;
 }
 
 /* apply a working role for a component having multiple roles */
